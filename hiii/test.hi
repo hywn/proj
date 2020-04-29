@@ -1,0 +1,52 @@
+<!-- defines -->
+
+<!-- !yt code width height -->
+	
+	<iframe width="@width" height="@height" src="https://www.youtube.com/embed/@code" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+<!--.-->
+
+<!-- !ong artist song yt -->
+
+	<tr><td>@artist - @song</td><td><!-- $yt @yt 250 100 --></td></tr>
+
+<!--.-->
+
+
+<!-- actual layout -->
+
+<div class="box">
+	<h1>song</h1>
+	cool song bro :)
+</div>
+
+<div class="box">
+	<table>
+		<!-- $ong  «dinazor & kurbağa» «dans eden dinazor ve kurbağa 1 saat» -gLEizxGh_A -->
+		<!-- $ong   dinosaur            dance                                -gLEizxGh_A -->
+		<!-- $ong  «dinosaur frog»      music                                -gLEizxGh_A -->
+		<!-- $ong   dino                «frog dance»                         -gLEizxGh_A -->
+	</table>
+</div>
+
+
+<!-- CSS -->
+
+<style>
+body
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #000;
+	color: #eee;
+}
+.box {
+	padding: 1em;
+	margin: 1em;
+	width: 32em;
+	background-color: #222
+}
+
+table { width: 100% }
+</style>
