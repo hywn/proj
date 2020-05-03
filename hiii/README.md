@@ -8,7 +8,7 @@ input file
 <!-- . -->
 
 <blockquote>
-	<!-- $MyReplacementThing input1 «input2 with whitespace     inside of it» -->
+	<!-- $MyReplacementThing input1 "input2 with whitespace     inside of it" -->
 </blockquote>
 ```
 
@@ -23,5 +23,4 @@ produces outputs
 
 notes:
 - replacementthings inside of other replacementthings will be evaluated
-- you can't escape «»s as of now so there's basically no way to use them as inputs
 - usage: `./hi.rb <input file name>` (stdin would actually prob be better since it outputs to stdout :thinking:)

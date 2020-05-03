@@ -17,7 +17,10 @@ def apply(text)
 		
 		cmd  = contents[0]
 		name = contents[/(?<=[!$])\w+/]
-		args = contents.scan(/(?<=«).+?(?=»)|[^«»\s]+/)[1..-1]
+		
+		# will include "s in "hello world", but i dont think there's a way to not that since if you use looks it will try to match ' z ' in '"abc" z "def"' ?
+		args = contents.scan(/(?<!\\)".*?(?<!\\)"|[^\s]+/)[1..-1]
+		args = args.map { |s| (s =~ /^".*"$/? s[1...-1] : s).gsub('\"', '"') }
 		
 		if cmd === '!'
 			body = text[/(?<=#{comment}).+?(?=<!--\s*\.\s*-->)/m]
